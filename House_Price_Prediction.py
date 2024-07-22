@@ -7,14 +7,12 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_squared_error
 
 # Load the dataset
-# Replace 'your_dataset.csv' with the path to your dataset
 data = pd.read_csv('Z:/CognoRise Infotech/data.csv')
 
 # Display the first few rows of the dataset
 print(data.head())
 
 # Feature Selection
-# Using available columns
 features = ['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors']
 X = data[features]
 y = data['price']
